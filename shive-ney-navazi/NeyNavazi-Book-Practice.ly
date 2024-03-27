@@ -39,7 +39,7 @@ make-score =
           midiInstrument = "piccolo"
         } { #musicContent }
         \midi {
-          \tempo 4 = 80
+          \tempo 4 = 76
         }
       }
     }
@@ -168,5 +168,31 @@ make-score =
   f8 (g16 f16)
   e4 r4 
   d2 \fermata \bar "|."
+}
+
+\make-score "۱۷" "17" \relative c' {
+  \numericTimeSignature
+  \time 2/4
+  \repeat unfold 2 {
+    d8 a'8 a8 a8
+    g8 a8 a8 g8
+    f4 g4
+  }
+  
+  f8 g8 a8 f8
+  e8 g8 e8 d8
+  a'4 g4
+  
+  f8 g8 a8 f8
+  e8 g8 e8 d8
+  g4 d4
+
+  c8 d8 d8 d8
+  d4 d8 c8
+  f4 e4
+  
+  c8 d8 d8 d8
+  d4 d8 c8
+  e4 d4 \fermata \bar ":|."
 }
 
